@@ -2,6 +2,6 @@
 def square_matrix_simple(matrix=[]):
     new_matrix = []
     if len(matrix) > 0:
-        for i in matrix[:]:
+        for i in matrix:
             new_matrix.append(list(map(lambda x: x*x, i)))
     return new_matrix
