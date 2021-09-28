@@ -5,7 +5,7 @@ def safe_print_list_integers(my_list=[], x=0):
         if isinstance(my_list[i], int):
             try:
                 cont += 1
-                print('{:d}'.format(my_list[i]), end = '')
+                print('{:d}'.format(my_list[i]), end='')
             except TypeError as err:
                 print(err)
     print()
