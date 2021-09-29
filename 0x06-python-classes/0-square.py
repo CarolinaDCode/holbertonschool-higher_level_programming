@@ -2,5 +2,7 @@
 
 
 class Square:
-    """Simple square class, empty"""
+    """
+    Simple square class, empty
+    """
     pass
