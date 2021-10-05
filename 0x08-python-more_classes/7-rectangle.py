@@ -50,8 +50,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ('')
         x = ''
-        for i in range(self.height):
-            x += str('#' * self.__width) + '\n'
+        for i in range(self.__height):
+            x += str(str(self.print_symbol) * self.__width) + '\n'
         x = x[:-1]
         return x
 
