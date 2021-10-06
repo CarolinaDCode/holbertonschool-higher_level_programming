@@ -1,9 +1,14 @@
-"""sdfsdfdsf"""
+#!/usr/bin/python3
+"""function that prints a square with the character #"""
 
 
 def print_square(size):
     """
-    sdfsdfdf
+    function that prints a square with the character #:
+    size is the size length of the square,
+    if size is not integer, throw raise a TypeError,
+    if size is less than 0, throw raise a ValueError,
+    if size is a float and is less than 0, throw raise a TypeError.
     """
 
     if type(size) != int:
