@@ -33,6 +33,5 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1, 2, 4, 3, 0]), 4)
 
 
-
 if __name__ == '__main__':
     unittest.main()
