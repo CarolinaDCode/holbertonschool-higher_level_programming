@@ -27,7 +27,7 @@ class TestMaxInteger(unittest.TestCase):
         """
         self.assertEqual(max_integer([1]), 1)
 
-    def test_max_int_one(self):
+    def test_max_int_middle(self):
         """ tests normal list of ints
         """
         self.assertEqual(max_integer([1, 2, 4, 3, 0]), 4)
