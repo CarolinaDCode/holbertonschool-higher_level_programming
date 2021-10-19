@@ -4,8 +4,10 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """Class Rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Constructor"""
         super().__init__(id)
         self.width = width
         self.height = height
@@ -13,10 +15,12 @@ class Rectangle(Base):
         self.y = y
 
     @property
+    """Getter"""
     def width(self):
         return self.__width
 
     @width.setter
+    """Setter, validations"""
     def width(self, value):
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -25,10 +29,12 @@ class Rectangle(Base):
         self.__width = value
 
     @property
+    """Getter"""
     def height(self):
         return self.__height
 
     @height.setter
+    """Setter, validations"""
     def height(self, value):
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -37,10 +43,12 @@ class Rectangle(Base):
         self.__height = value
 
     @property
+    """Getter"""
     def x(self):
         return self.__x
 
     @x.setter
+    """Setter, validations"""
     def x(self, value):
         if type(value) is not int:
             raise TypeError("x must be an integer")
@@ -49,10 +57,12 @@ class Rectangle(Base):
         self.__x = value
 
     @property
+    """Getter"""
     def y(self):
         return self.__y
 
     @y.setter
+    """Setter, validations"""
     def y(self, value):
         if type(value) is not int:
             raise TypeError("y must be an integer")
@@ -61,9 +71,17 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """
+        Public Method that returns
+        the area value of the Rectangle
+        """
         return self.__width * self.__height
 
     def display(self):
+        """
+        Adding the public method that prints
+        the Rectangle with the character #
+        """
         for e in range(self.__y):
             print()
         for i in range(self.__height):
@@ -74,10 +92,15 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """Method"""
         return("[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height))
 
     def update(self, *args, **kwargs):
+        """
+        Public Method that assign a Key/value
+        argument to attributes
+        """
         if len(args) != 0:
             if len(args) > 0:
                 self.id = args[0]
@@ -103,6 +126,10 @@ class Rectangle(Base):
                     self.y = value
 
     def to_dictionary(self):
+        """
+        Public Method that returns the dictionary
+        representation of a Rectangle
+        """
         dic = {}
         dic['x'] = self.x
         dic['y'] = self.y
