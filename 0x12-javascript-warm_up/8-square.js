@@ -6,4 +6,4 @@ if (!isNaN(num)) {
     }
 } else {
     console.log('Missing size');
-}c
+}
