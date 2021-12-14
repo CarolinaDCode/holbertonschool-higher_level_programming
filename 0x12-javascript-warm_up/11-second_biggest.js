@@ -5,13 +5,13 @@
 const myVar = process.argv;
 const arraicito = [];
 if (myVar.length <= 3) {
-  console.log(0);
+  console.log('0');
 } else {
   for (let i = 2; i < myVar.length; i++) {
     arraicito.push(parseInt(myVar[i]));
-    arraicito.sort();
+    arraicito.sort((a, b) => a - b);
   }
-  const index = arraicito.length;
-  const num2max = arraicito[index - 2];
+  let index = arraicito.length;
+  let num2max = arraicito[index - 2];
   console.log(num2max);
 }
