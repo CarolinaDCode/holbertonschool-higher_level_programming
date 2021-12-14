@@ -5,7 +5,7 @@
 const myVar = process.argv;
 const arraicito = [];
 if (myVar.length <= 3) {
-  console.log('0');
+  console.log(0);
 } else {
   for (let i = 2; i < myVar.length; i++) {
     arraicito.push(parseInt(myVar[i]));
