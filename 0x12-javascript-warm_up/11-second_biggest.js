@@ -10,8 +10,9 @@ if (myVar.length <= 3) {
   for (let i = 2; i < myVar.length; i++) {
     arraicito.push(parseInt(myVar[i]));
     arraicito.sort((a, b) => a - b);
-}
-  let index = arraicito.length;
-  let num2max = arraicito[index - 2];
+  }
+  const index = arraicito.length;
+  const num2max = arraicito[index - 2];
   console.log(num2max);
 }
+exports.myVar = myVar;
