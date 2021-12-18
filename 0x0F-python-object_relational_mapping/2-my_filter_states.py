@@ -11,10 +11,9 @@ if __name__ == "__main__":
                            passwd=argv[2], db=argv[3])
     cur = conn.cursor()
     cur.execute("SELECT * FROM states WHERE name='{}' ORDER BY id ASC"
-                .format(argv[4]))              
+                .format(argv[4]))
     query_rows = cur.fetchall()
-    # print(argv[4])
     for row in query_rows:
-            print(row)
+        print(row)
     cur.close()
     conn.close()
