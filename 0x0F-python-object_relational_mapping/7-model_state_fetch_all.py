@@ -6,7 +6,7 @@ lists all State objects from the database hbtn_0e_6_usa
 
 if __name__ == "__main__":
     from model_state import Base, State
-    from sqlalchemy import (create_engine)
+    from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
     from sys import argv
 
