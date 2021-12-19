@@ -18,9 +18,9 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    data = session.query(State).filter(State.name == argv[4]).first()
+    data = session.query(State).filter(State.name == argv[4]).all()
     if data is None:
         print("Not found")
     else:
-        print('{}'.format(data.id))
+        print('{}'.format(data[0].id))
     session.close()
