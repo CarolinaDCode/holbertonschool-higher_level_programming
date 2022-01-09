@@ -1015,7 +1015,6 @@ guillaume@ubuntu:~/0x10$
                     </div>
                 </div>
             </div>
-            <p class="lg-gap" style="box-sizing: border-box; margin-top: 100px !important; margin-right: 0px; margin-bottom: 10px; margin-left: 0px;"><a class="btn btn-primary btn-block" data-confirm='Are you sure? You still have mandatory tasks to do on the projects "0x10. Python - Network #0", "0x11. Python - Network #1", you really should focus on those first.' href="https://intranet.hbtn.io/projects/299/unlock_optionals" style="box-sizing: border-box; background-color: rgb(224, 0, 60); color: rgb(255, 255, 255); text-decoration: none; display: block; margin-bottom: 0px; font-weight: normal; text-align: center; white-space: nowrap; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid rgb(199, 0, 53); padding: 6px 12px; font-size: 14px; line-height: 1.42857; border-radius: 4px; user-select: none; width: 856.364px;">Done with the mandatory tasks? Unlock 3 advanced tasks now!</a></p>
         </div>
     </div>
 </article>
