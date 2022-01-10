@@ -8,8 +8,9 @@
     * You don’t need to check script arguments (number and type)
 """
 import requests
-from sys import argv
+import sys
 
 if __name__ == "__main__":
-    req = requests.get(argv[1])
-    print(req.headers.get("X-Request-Id"))
+    argument = sys.argv[1]
+    r = requests.get(argument)
+    print(r.headers.get('X-Request-Id'))
