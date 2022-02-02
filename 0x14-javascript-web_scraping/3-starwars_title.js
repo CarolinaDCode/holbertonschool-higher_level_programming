@@ -3,10 +3,10 @@
 where the episode number matches a given integer */
 const request = require('request');
 const url = 'https://swapi-api.hbtn.io/api/films/';
-const movieId = process.argv[2];
-request(url + movieId, function (err, response, body) {
+const episodeNumber = process.argv[2];
+request(url + episodeNumber, function (err, response, body) {
   if (err) {
-    console.log(err)
+    console.log(err);
   } else {
     console.log(JSON.parse(body).title);
   }
