@@ -1,4 +1,4 @@
 // Add text to element header
-$('div#red_header').click(function(){
+$('DIV#update_header').click(function(){
     $('header').text('New Header!!!');
 });
